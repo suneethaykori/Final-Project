@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+}
+body{
+  margin: 200px;
+  background-color: aqua;
+
+}
+.rtbutton{
+  margin-right: 30px;
+  margin-top: 10px;
+  width: 120px;
+  float: right;
+  background-color: #282c34;
+  padding: 20px; 
+  color: white;
+  font-family: 'Russo One', sans-serif;
+  
+  border: none;
+}
+
+
+.logo {
+  /*display: inline-block;*/
+  margin: 10px;
+  box-shadow: 0 2px 2px #ccc;
+  border: 1px solid #eee;
+  width: 100px;
+  padding: 20px;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.features {
+  width: 18%;
+  padding: 20px;
+  margin-left: 30px;
+  text-align: center;
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 15px 0 15px 0;
+}
+
+.searchform{
+  width: 400px;
+  margin-left: 30%;
+  height: 50px;
+}
+
+.searchinput{
+  width:200px;
+  height:50px;
+  margin:10px;
+}
+
+.searchbutton{
+  width:100px;
+  height: 50px;
+  margin:10px;
+  background-color: lightgreen;
+  border-radius: 10px;
+  
+
+}
+
+
+
