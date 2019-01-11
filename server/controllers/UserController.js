@@ -1,7 +1,7 @@
 let UserModel = require("../models/UserModel");
 
 module.exports.show =  function show(req, res) {
-    UserModel.find({"email":req.param.email}).exec()
+    UserModel.find({email:req.params.email}).exec()
     .then(user => {
         return res.json(user);
     });

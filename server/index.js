@@ -2,7 +2,7 @@ let express = require("express");
 const bodyParser = require('body-parser');
 let TruckOwnerRoutes  = require("./routes/truckOwnerRoute");
 let UserRoutes  = require("./routes/userRoute");
-//let SearchRoutes  = require("./routes/searchRoute");
+let SearchRoutes  = require("./routes/searchRoute");
 
 
 let mongoose = require("mongoose");
@@ -14,9 +14,10 @@ const app = express();
 app.use(bodyParser.json());
 
 app.use(express.static('public'));
+//app.use(require('./routers/userRouters'));
 app.use(UserRoutes);
 app.use(TruckOwnerRoutes);
-//app.use(SearchRoutes);
+app.use(SearchRoutes);
 
 
 // const users = require("./user");

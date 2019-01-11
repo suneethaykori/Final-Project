@@ -1,22 +1,19 @@
 import React, { Component } from 'react';
 import logo from './images/logo.jpg';
 import './App.css';
-import Home from './home.js';
+import Home from './containers/SearchTrucksContainer.js';
 import UserLogin from './components/userLogin.js';
-import UserSignUp from './components/userSignUp.js';
+import UserSignUp from './containers/userSignupContainer.js';
 import TruckOwnerLogin from './components/truckOwnerLogin.js';
-import TruckOwnerSignUp from './components/truckOwnerSignUp.js';
+import TruckOwnerSignUp from './containers/tOwnerSignUpContainer.js';
 
 
-
-
-
-
-//mport { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class App extends Component {
   state = {
-    currentPage : "Home"
+    currentPage : "Home",
+    isLoggedIn : false
   }
 
   buttonClick(buttonName){
